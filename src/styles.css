@@ -24,6 +24,7 @@ body {
 
 app-dashboard {
   display: flex;
+  flex-wrap: wrap;
 }
 
 #add-link {
@@ -33,7 +34,7 @@ app-dashboard {
 }
 
 .mat-tab-label {
-  width: 50%;
+  width: 100%;
 }
 
 /*.prueba {

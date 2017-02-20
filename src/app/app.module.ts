@@ -19,6 +19,7 @@ import { AddComponent } from './add/add.component';
 import { UsersService } from './users.service';
 import { HeaderService } from './header.service';
 import { LibraryService } from './library.service';
+import { ListaActualComponent } from './lista-actual/lista-actual.component';
 
 
 const appRoutes: Routes = [
@@ -39,7 +40,8 @@ const appRoutes: Routes = [
     PlayerComponent,
     LibraryComponent,
     LibraryTabsComponent,
-    AddComponent
+    AddComponent,
+    ListaActualComponent
   ],
   imports: [
     BrowserModule,
