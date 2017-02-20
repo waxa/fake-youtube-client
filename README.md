@@ -1,9 +1,11 @@
 # Client
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
-a basic login and sing up app on ng2, with angular material
 
-## install and deploy
+
+A basic login and sing up app on ng2, with angular material
+
+## Install and deploy
 
 * clone the repo
 	* `git clone https://github.com/waxa/ng2-material-login-template.git`
@@ -17,6 +19,3 @@ a basic login and sing up app on ng2, with angular material
 	* `ng build (-prod)` 
 
 
-## Further help
-
-To get more help on the angular-cli use ng help or go check out the Angular-CLI README.
