@@ -21,3 +21,31 @@ body {
 .half-width {
   width: 50%;
 }
+
+app-dashboard {
+  display: flex;
+}
+
+#add-link {
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+}
+
+.mat-tab-label {
+  width: 50%;
+}
+
+/*.prueba {
+  background-color: rgba(255, 0, 0, 0.5);
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.flex-item {
+
+}*/

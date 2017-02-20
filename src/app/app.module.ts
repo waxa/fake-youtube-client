@@ -10,16 +10,22 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistroComponent } from './registro/registro.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { HeaderComponent } from './header/header.component';
+import { PlayerComponent } from './player/player.component';
+import { LibraryComponent } from './library/library.component';
+import { LibraryTabsComponent } from './library-tabs/library-tabs.component';
+import { AddComponent } from './add/add.component';
 
 import { UsersService } from './users.service';
 import { HeaderService } from './header.service';
-import { HeaderComponent } from './header/header.component';
+import { LibraryService } from './library.service';
 
 
 const appRoutes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'registro', component: RegistroComponent },
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'add', component: AddComponent },
   { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
@@ -29,7 +35,11 @@ const appRoutes: Routes = [
     LoginComponent,
     RegistroComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    PlayerComponent,
+    LibraryComponent,
+    LibraryTabsComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +50,8 @@ const appRoutes: Routes = [
   ],
   providers: [
     { provide: UsersService, useClass: UsersService },
-    { provide: HeaderService, useClass: HeaderService }
+    { provide: HeaderService, useClass: HeaderService },
+    { provide: LibraryService, useClass: LibraryService }
   ],
   bootstrap: [AppComponent]
 })

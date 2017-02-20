@@ -4,6 +4,7 @@ import { Subscription } from 'rxjs/Subscription';
 
 import { UsersService } from '../users.service';
 import { HeaderService } from '../header.service';
+
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
@@ -34,6 +35,10 @@ export class DashboardComponent implements OnInit {
     if (!this.loginState) {
       this.router.navigate(['/login']);
     }
+  }
+
+  public onClickAdd():void {
+    this.router.navigate(['/add']);
   }
 
   ngOnDestroy() {
