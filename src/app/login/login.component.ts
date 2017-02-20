@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     private router: Router ) {}
 
   ngOnInit() {
-    console.log("init login");
+    // console.log("init login");
     this.header.setTitulo("Login");
     this.header.setBack(false, []);
     this.loginStateSubscription = this.users.getloginState()
