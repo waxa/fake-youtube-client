@@ -1,4 +1,39 @@
-<div>
-  Aqui va un reproductor :D
-  y luego una lista
-</div>
+<md-grid-list class="player-container" cols="10" rowHeight="10px">
+
+  <md-grid-tile colspan="3" rowspan="4"></md-grid-tile>
+  <md-grid-tile colspan="4" rowspan="4">
+    Titulo cancion
+  </md-grid-tile>
+  <md-grid-tile colspan="3" rowspan="4"></md-grid-tile>
+
+  <md-grid-tile colspan="1" rowspan="2">00:00</md-grid-tile>
+  <md-grid-tile class="player-progress-container" colspan="8" rowspan="2">
+    <md-slider class="full-width" min="0" max="100" step="1" value="73"></md-slider>
+    <!-- <div class="player-progress"></div> -->
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="2">00:00</md-grid-tile>
+
+  <md-grid-tile colspan="10" rowspan="1"></md-grid-tile>
+
+  <md-grid-tile colspan="3" rowspan="3"></md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3">
+    <button md-button><md-icon>skip_previous</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3">
+    <button md-button><md-icon>play_arrow</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3">
+    <button md-button><md-icon>pause</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3">
+    <button md-button><md-icon>stop</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3">
+    <button md-button><md-icon>skip_next</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="2" rowspan="3"></md-grid-tile>
+
+  <md-grid-tile colspan="10" rowspan="1"></md-grid-tile>
+
+
+</md-grid-list>

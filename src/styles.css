@@ -37,16 +37,14 @@ app-dashboard {
   width: 100%;
 }
 
-/*.prueba {
-  background-color: rgba(255, 0, 0, 0.5);
+.player-container {
+  background-color: rgba(0, 0, 255, 0.3);
 }
 
-.flex-container {
-  display: flex;
-  justify-content: center;
+/*md-grid-tile.player-progress-container .mat-figure {
+  justify-content: flex-start;
+}*/
 
-}
-
-.flex-item {
-
+/*.player-container. md-grid-tile button {
+  background-color: rgba(0, 0, 255, 0.3);
 }*/
