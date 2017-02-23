@@ -2,7 +2,7 @@
 
   <md-grid-tile colspan="3" rowspan="4"></md-grid-tile>
   <md-grid-tile colspan="4" rowspan="4">
-    Titulo cancion
+    {{audioData.titulo}}
   </md-grid-tile>
   <md-grid-tile colspan="3" rowspan="4"></md-grid-tile>
 
@@ -17,21 +17,21 @@
 
   <md-grid-tile colspan="3" rowspan="3"></md-grid-tile>
   <md-grid-tile colspan="1" rowspan="3">
-    <button md-button><md-icon>skip_previous</md-icon></button>
+    <button md-button disabled><md-icon>skip_previous</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3" *ngIf="!isPlaying">
+    <button md-button (click)="onClickPlay()" [disabled]="!isLoaded"><md-icon>play_arrow</md-icon></button>
+  </md-grid-tile>
+  <md-grid-tile colspan="1" rowspan="3" *ngIf="isPlaying">
+    <button md-button (click)="onClickPause()" [disabled]="!isLoaded"><md-icon>pause</md-icon></button>
   </md-grid-tile>
   <md-grid-tile colspan="1" rowspan="3">
-    <button md-button><md-icon>play_arrow</md-icon></button>
+    <button md-button (click)="onClickStop()" [disabled]="!isLoaded"><md-icon>stop</md-icon></button>
   </md-grid-tile>
   <md-grid-tile colspan="1" rowspan="3">
-    <button md-button><md-icon>pause</md-icon></button>
+    <button md-button disabled><md-icon>skip_next</md-icon></button>
   </md-grid-tile>
-  <md-grid-tile colspan="1" rowspan="3">
-    <button md-button><md-icon>stop</md-icon></button>
-  </md-grid-tile>
-  <md-grid-tile colspan="1" rowspan="3">
-    <button md-button><md-icon>skip_next</md-icon></button>
-  </md-grid-tile>
-  <md-grid-tile colspan="2" rowspan="3"></md-grid-tile>
+  <md-grid-tile colspan="3" rowspan="3"></md-grid-tile>
 
   <md-grid-tile colspan="10" rowspan="1"></md-grid-tile>
 
